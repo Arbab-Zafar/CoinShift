@@ -253,10 +253,12 @@ tr:nth-child(even) {
 #disclaimer #lastUpdated{
     font-size: 13px;
     margin-block: 3px;
+    display: none;
 }
 
 #disclaimer #disclaimerText{
     font-size: 10px;
+    display: none;
 }
 /* Utility Classes */
 

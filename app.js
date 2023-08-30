@@ -116,6 +116,8 @@ async function populate(baseCurrency, toCurrency, amount) {
     let date = result["meta"]["last_updated_at"]
     date = date.slice(0, 10);
     let finalDate = date.slice(-2) + "-" + date.slice(5, 7) + "-" + date.slice(0, 4);
+    document.querySelector('#lastUpdated').style.display = "initial";
+    document.querySelector('#disclaimerText').style.display = "initial";
     document.querySelector('#lastUpdated').innerText = "Last Updated: " + finalDate;
 
 
