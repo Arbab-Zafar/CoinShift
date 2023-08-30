@@ -169,6 +169,8 @@
 }
 
 #result {
+    opacity: 0;
+    transition: 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +186,9 @@
     font-weight: bold;
 }
 
-#tableResult{
+#tableResult {
+    opacity: 0;
+    transition: 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,7 +197,8 @@
     margin: 10px;
     margin-inline: auto;
 }
-#tableResult h2{
+
+#tableResult h2 {
     margin: 10px;
 }
 
@@ -214,6 +219,45 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
+#resultSearchDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#resultSearchDiv i {
+    position: absolute;
+    top: 10px;
+    left: 170px;
+}
+
+#resultSearchDiv #resultSearch {
+    margin-bottom: 20px;
+    width: 60%;
+    height: 34px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    padding-left: 40px;
+    box-shadow: 3px 3px 5px #aaa6a6;
+    box-sizing: border-box;
+}
+
+#disclaimer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#disclaimer #lastUpdated{
+    font-size: 13px;
+    margin-block: 3px;
+}
+
+#disclaimer #disclaimerText{
+    font-size: 10px;
+}
 /* Utility Classes */
 
 .content.active {

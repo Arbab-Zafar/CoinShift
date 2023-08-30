@@ -36,11 +36,11 @@
             </div>
         </div>
         <h3>Enter the amount:</h3>
-        <input type="number" name="" id="amount" placeholder="Enter the amount: ">
+        <input type="number" name="" id="amount" placeholder="Enter the amount: " value="1" min="1">
         <h3>To:</h3>
         <div class="wrapper">
             <div class="selectBtn">
-                <span class="selectedText">INR</span>
+                <span class="selectedText">All currency</span>
                 <i class="fa-solid fa-caret-down" id="downArrow"></i>
             </div>
             <div class="content">
@@ -52,44 +52,32 @@
             </div>
         </div>
         <button id="submit">Shift</button>
+    </section>
 
+    <section id="disclaimer">
+        <p id="lastUpdated">Last updated: </p>
+        <p id="disclaimerText"><i>The value of the currency may not be 100% accurate.</i></p>
     </section>
 
     <section id="result">
         <h2>Result: </h2>
-        <!-- <p id="resultText"></p> -->
+        <p id="resultText"></p>
     </section>
 
     <section id="tableResult">
         <h2>Result: </h2>
+        <div id="resultSearchDiv">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="resultSearch">
+        </div>
         <table id="table">
             <tr>
                 <th>Code</th>
                 <th>Value</th>
             </tr>
             <!-- <tr>
-                <td>INR</td>
-                <td>73676</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-            </tr>
-            <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-            </tr>
-            <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-            </tr>
-            <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-            </tr>
-            <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
+                <td>Code</td>
+                <td>Value</td>
             </tr> -->
         </table>
     </section>
