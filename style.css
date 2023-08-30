@@ -176,12 +176,42 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(money-banner.jpg);
 }
 
-#resultText{
+#resultText {
     background-color: #696969e8;
     padding: 3px 5px;
     margin-bottom: 10px;
     color: white;
     font-weight: bold;
+}
+
+#tableResult{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px;
+    margin-inline: auto;
+}
+#tableResult h2{
+    margin: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 /* Utility Classes */
