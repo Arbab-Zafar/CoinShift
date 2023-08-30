@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,400;1,500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-color: #7de6ee;
+    padding-block: 5px;
+}
+
+#header #logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#input {
+    width: 450px;
+    border: 0.5px solid grey;
+    box-shadow: 3px 3px 3px grey;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    background: #ffffff;
+    width: 350px;
+    padding: 5px;
+}
+
+.wrapper .selectBtn {
+    background: #59bfe8;
+    padding: 5px 40px 5px 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .selectBtn #downArrow {
+    transition: 0.5s;
+    margin-top: 3px;
+}
+
+.content{
+    display: none;
+}
+
+.content .search{
+    margin-block: 10px;
+    position: relative;
+    box-shadow: 2px 2px 2px rgb(185, 183, 183);
+}
+
+.search input{
+    width: 100%;
+    height: 40px;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+.search i{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+
+.content .list{
+    border: 0.5px solid grey;
+    box-shadow: 2px 2px 2px rgb(185, 183, 183);
+    padding: 10px 20px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    height: 225px;
+}
+
+.list .searchItem, .list .searchItem2{
+    padding: 5px 10px;
+    background: aliceblue;
+    margin-block: 5px;
+    border: 0.1px solid #dadada;
+    border-radius: 3px;
+}
+
+.list .searchItem:hover, .list .searchItem2:hover{
+    background: rgb(112, 173, 227);
+}
+
+
+/* Utility Classes */
+
+.content.active{
+    display: initial;
+}
+
+#downArrow.rotate{
+    rotate: 180deg;
+}
+
+/* Cistomizing Scrollbar  */
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border: 0.1px solid white;
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3f3f3f; 
+  }
