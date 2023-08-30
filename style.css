@@ -43,6 +43,15 @@
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    height: 35px;
+    width: 350px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.selectBtn:hover {
+    height: 40px;
+    width: 360px;
 }
 
 .wrapper .selectBtn #downArrow {
@@ -95,6 +104,24 @@
     background: rgb(112, 173, 227);
 }
 
+#submit {
+    background-color: white;
+    color: #59bfe8;
+    border: 0.5px solid grey;
+    border-radius: 7px;
+    font-size: 15px;
+    margin: 15px;
+    width: 150px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    color: white;
+    background-color: #59bfe8;
+    width: 170px;
+    height: 35px;
+}
 
 /* Utility Classes */
 
