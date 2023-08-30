@@ -47,11 +47,13 @@
     width: 350px;
     box-sizing: border-box;
     transition: 0.3s;
+    box-shadow: 3px 3px 5px grey;
 }
 
 .selectBtn:hover {
     height: 40px;
     width: 360px;
+    box-shadow: 4px 4px 5px grey;
 }
 
 .wrapper .selectBtn #downArrow {
@@ -59,17 +61,17 @@
     margin-top: 3px;
 }
 
-.content{
+.content {
     display: none;
 }
 
-.content .search{
+.content .search {
     margin-block: 10px;
     position: relative;
     box-shadow: 2px 2px 2px rgb(185, 183, 183);
 }
 
-.search input{
+.search input {
     width: 100%;
     height: 40px;
     border: 0.5px solid grey;
@@ -77,13 +79,14 @@
     padding-left: 40px;
     box-sizing: border-box;
 }
-.search i{
+
+.search i {
     position: absolute;
     top: 13px;
     left: 15px;
 }
 
-.content .list{
+.content .list {
     border: 0.5px solid grey;
     box-shadow: 2px 2px 2px rgb(185, 183, 183);
     padding: 10px 20px;
@@ -92,7 +95,8 @@
     height: 225px;
 }
 
-.list .searchItem, .list .searchItem2{
+.list .searchItem,
+.list .searchItem2 {
     padding: 5px 10px;
     background: aliceblue;
     margin-block: 5px;
@@ -100,7 +104,8 @@
     border-radius: 3px;
 }
 
-.list .searchItem:hover, .list .searchItem2:hover{
+.list .searchItem:hover,
+.list .searchItem2:hover {
     background: rgb(112, 173, 227);
 }
 
@@ -109,27 +114,46 @@
     color: #59bfe8;
     border: 0.5px solid grey;
     border-radius: 7px;
-    font-size: 15px;
+    font-size: 17px;
     margin: 15px;
     width: 150px;
     height: 30px;
     transition: 0.3s;
+    box-shadow: 2px 2px 4px grey;
 }
 
 #submit:hover {
+    font-weight: bold;
     color: white;
     background-color: #59bfe8;
     width: 170px;
     height: 35px;
 }
 
+#amount {
+    width: 349px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    height: 35px;
+    border: 0.5px solid grey;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px grey;
+    transition: 0.3s;
+}
+
+#amount:hover {
+    width: 359px;
+    height: 40px;
+    box-shadow: 4px 4px 5px grey;
+}
+
 /* Utility Classes */
 
-.content.active{
+.content.active {
     display: initial;
 }
 
-#downArrow.rotate{
+#downArrow.rotate {
     rotate: 180deg;
 }
 
@@ -137,21 +161,25 @@
 
 ::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
     border: 0.1px solid white;
     border-radius: 6px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #3f3f3f; 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f3f;
+}
+
+h3{
+    margin: 10px;
+}

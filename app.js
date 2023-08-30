@@ -83,9 +83,18 @@ function addEventOnSearchItem(index) {
 }
 
 submit.addEventListener('click', () => {
-    // let apiKey = "https://api.currencyapi.com/v3/latest?apikey=cur_live_JyPIXvfXJmcoEkBZRHqCpJWoUQppE6MWN0Y1uQa7";
     let baseCurrency = selectBtn[0].innerText;
     let toCurrency = selectBtn[1].innerText;
-    let apiKey = `https://api.currencyapi.com/v3/latest?apikey=cur_live_JyPIXvfXJmcoEkBZRHqCpJWoUQppE6MWN0Y1uQa7&base_currency=${baseCurrency}`;
-    
+    let amount = document.querySelector('#amount').value;
+    populate(baseCurrency, toCurrency, amount);
 })
+
+async function populate(baseCurrency, toCurrency, amount) {
+    let apiKey = `https://api.currencyapi.com/v3/latest?apikey=cur_live_JyPIXvfXJmcoEkBZRHqCpJWoUQppE6MWN0Y1uQa7&base_currency=${baseCurrency}`;
+
+    let response = await fetch(apiKey);
+    let result = await response.json();
+
+    console.log(result)
+
+}
