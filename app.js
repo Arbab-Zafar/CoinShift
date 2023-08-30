@@ -90,11 +90,15 @@ submit.addEventListener('click', () => {
 })
 
 async function populate(baseCurrency, toCurrency, amount) {
-    let apiKey = `https://api.currencyapi.com/v3/latest?apikey=cur_live_JyPIXvfXJmcoEkBZRHqCpJWoUQppE6MWN0Y1uQa7&base_currency=${baseCurrency}`;
+    document.querySelector('#notification').style.opacity = '1';
+    setTimeout(() => {
+    document.querySelector('#notification').style.opacity = '0';
+    }, 1500);
+    // let apiKey = `https://api.currencyapi.com/v3/latest?apikey=cur_live_JyPIXvfXJmcoEkBZRHqCpJWoUQppE6MWN0Y1uQa7&base_currency=${baseCurrency}`;
 
-    let response = await fetch(apiKey);
-    let result = await response.json();
+    // let response = await fetch(apiKey);
+    // let result = await response.json();
 
-    console.log(result)
+    // console.log(result)
 
 }

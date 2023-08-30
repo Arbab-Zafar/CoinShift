@@ -147,6 +147,28 @@
     box-shadow: 4px 4px 5px grey;
 }
 
+#notification {
+    margin-block: 6px;
+    background: #4dbf7b;
+    width: 80%;
+    box-sizing: border-box;
+    margin-inline: auto;
+    padding: 3px 10px 3px 20px;
+    color: white;
+    height: 40px;
+    box-shadow: 2px 2px 2px 2px #b7f8d5;
+    display: flex;
+    align-items: center;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#notification i {
+    margin-right: 7px;
+}
+
 /* Utility Classes */
 
 .content.active {
@@ -180,6 +202,6 @@
     background: #3f3f3f;
 }
 
-h3{
+h3 {
     margin: 10px;
 }
