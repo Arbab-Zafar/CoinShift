@@ -13,6 +13,7 @@
     font-family: 'Lato', sans-serif;
     background-color: #7de6ee;
     padding-block: 5px;
+    width: 100%;
 }
 
 #header #logo {
@@ -244,22 +245,24 @@ tr:nth-child(even) {
     box-sizing: border-box;
 }
 
-#disclaimer{
+#disclaimer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#disclaimer #lastUpdated{
+
+#disclaimer #lastUpdated {
     font-size: 13px;
     margin-block: 3px;
     display: none;
 }
 
-#disclaimer #disclaimerText{
+#disclaimer #disclaimerText {
     font-size: 10px;
     display: none;
 }
+
 /* Utility Classes */
 
 .content.active {
@@ -295,4 +298,19 @@ tr:nth-child(even) {
 
 h3 {
     margin: 10px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    #input {
+        width: 90%;
+    }
+
+    .wrapper, .selectBtn{
+        width: 77%;
+        display: flex;
+    }
+    #amount {
+        width: 77%;
+    }
 }

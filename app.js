@@ -81,6 +81,7 @@ function addEventOnSearchItem(index) {
             })
         })
     }
+
     else {
         document.querySelectorAll('.searchItem2').forEach((element, index) => {
             element.addEventListener('click', () => {
@@ -174,3 +175,33 @@ resultSearch.addEventListener('input', () => {
         }
     });
 })
+
+// document.body.addEventListener('click', ()=>{
+//     Array.from(content).forEach((element,index)=>{
+//         addSearchTerms(index);
+//         element.classList.toggle('active');
+//         downArrow[index].classList.toggle('rotate');
+//     })
+// })
+
+
+let inputSec = document.querySelector('#input');
+
+
+// inputSec.addEventListener("mouseup", function (e) {
+//     // rest code here
+//     if(!inputSec.is(e.target) && inputSec.has(e.target).length === 0) {
+//         console.log("yes")
+//     }
+// })
+
+window.addEventListener('click', function (e) {
+    if (!inputSec.contains(e.target)) {
+        Array.from(content).forEach((element, index) => {
+            if(element.classList.contains('active')){
+                element.classList.toggle('active');
+                downArrow[index].classList.toggle('rotate');
+            }
+        })
+    }
+});
