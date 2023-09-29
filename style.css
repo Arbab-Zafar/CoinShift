@@ -313,4 +313,16 @@ h3 {
     #amount {
         width: 77%;
     }
+    #tableResult {
+        width: 85%;
+    }
+    #resultSearch{
+        width: 100% !important;
+    }
+    #resultSearchDiv i {
+        left: 280px;
+    }
+    ::-webkit-scrollbar {
+        width: 25px;
+    }
 }
